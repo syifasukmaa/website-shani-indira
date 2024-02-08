@@ -100,6 +100,7 @@ const Game = () => {
                       key={index}
                       size='large'
                       fullWidth={true}
+                      onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
                     >
                       {answerOption.answerText}
                     </Button>
