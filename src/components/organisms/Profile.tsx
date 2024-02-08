@@ -12,7 +12,7 @@ import { slideIn } from '@/utils/motion';
 export default function Profile() {
   return (
     <section
-      className='pt-[80px] sm:pt-[300px] md:pt-20'
+      className='pt-[20px] sm:pt-[100px] md:pt-20'
       id='Fun fact'
     >
       <div className='text-center px-6 lg:px-12'>
