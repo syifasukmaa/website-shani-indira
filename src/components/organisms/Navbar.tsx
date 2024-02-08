@@ -56,7 +56,7 @@ const Navbar = () => {
       }`}
     >
       <div className='relative flex items-center justify-between mx-auto px-4 md:px-6 lg:px-8'>
-        <h1 className='text-white text-2xl'>
+        <h1 className='text-white text-2xl font-semibold'>
           <span className='text-3xl'>S</span>hani <span className='text-3xl'>I</span>ndira
         </h1>
         {isNavOpen ? (

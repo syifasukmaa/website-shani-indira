@@ -29,14 +29,6 @@ const Game = () => {
               Shani mempunyai show yang bernama Kamar Shani, dimana Shani memberikan masukan kepada member lain yang
               sedang curhat kepadanya.
             </p>
-            {/* <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className='border-lightBlue border-2 hover:bg-lightGrey text-white rounded-md py-2 px-3 mt-4 shadow-md cursor-pointer font-semibold'
-              onClick={setIsModalOpen}
-            >
-              Silahkan Dibaca
-            </motion.button> */}
             <Button
               fullWidth={false}
               size='medium'
@@ -57,12 +49,7 @@ const Game = () => {
           >
             <div className='bg-white rounded shadow-md p-8 z-50 w-[80%] md:w-[60%] lg:w-[40%] xl:w-[30%] text-black relative'>
               <p className='mt-2'>{currentQuotes}</p>
-              {/* <button
-                className='bg-black text-white absolute rounded-md top-3 right-2 px-2 hover:bg-slate-600'
-                onClick={setIsModalClose}
-              >
-                X */}
-              {/* </button> */}
+
               <Button
                 variants='secondary'
                 size='small'

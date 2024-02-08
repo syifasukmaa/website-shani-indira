@@ -51,14 +51,16 @@ export default function Single() {
             </div>
             <div className='pb-2 flex'>
               <div className=' flex bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-pink mr-2 mb-2'>
-                <SlCalender className='text-pink font-bold' /> <span className='ml-2'>{single.year}</span>
+                <SlCalender className='text-pink font-bold hidden md:block' />{' '}
+                <span className='md:ml-2'>{single.year}</span>
               </div>
               <div
                 className={`${
                   single.position === '' ? 'hidden' : 'block'
-                } flex bg-gray-200 rounded-full capitalize px-3 py-1 text-sm font-semibold text-pink mb-2`}
+                } flex bg-gray-200 rounded-full capitalize px-3 py-1 text-sm font-semibold text-pink mb-2 `}
               >
-                <FaCrown className='text-pink font-bold text-sm' /> <span className='ml-1'>{single.position}</span>
+                <FaCrown className='mt-[2px] text-pink font-bold text-sm' />{' '}
+                <span className='ml-1'>{single.position}</span>
               </div>
             </div>
           </motion.div>
