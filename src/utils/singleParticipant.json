@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "img": "/img/single/beginner.jpg",
+    "title": "Beginner",
+    "year": "2016",
+    "position": "",
+    "link": "https://youtu.be/75LnlXWxKFQ?si=a2ogRQ7w0rTN1rV6"
+  },
+  {
+    "id": 2,
+    "img": "/img/single/luarbiasa.jpg",
+    "title": "Saikou ka yo",
+    "year": "2016",
+    "position": "",
+    "link": "https://youtu.be/VtQfusReKKI?si=SPVpEaZTcYoXr9qs"
+  },
+  {
+    "id": 3,
+    "img": "/img/single/solong.png",
+    "title": "So Long!",
+    "year": "2017",
+    "position": "",
+    "link": "https://youtu.be/dZhr5mpaxPc?si=QIE0LfIaS0WxY5MM"
+  },
+  {
+    "id": 4,
+    "img": "/img/single/indahsenyum.jpg",
+    "title": "Indahnya Senyum Manismu",
+    "year": "2017",
+    "position": "center",
+    "link": "https://youtu.be/RH_2pLlHN8Y?si=2czynx-_OpptYS7W"
+  },
+  {
+    "id": 5,
+    "img": "/img/single/dirimumelody.jpg",
+    "title": "Kimi wa Melody",
+    "year": "2017",
+    "position": "",
+    "link": "https://youtu.be/j5im1CSITnY?si=9PkWAn-ae1cXMimz"
+  },
+  {
+    "id": 6,
+    "img": "/img/single/kachuusha.jpg",
+    "title": "Everyday Kachuusa",
+    "year": "2018",
+    "position": "",
+    "link": "https://youtu.be/CnsbGySmSZ0?si=LNTkzDRp6YT6ibUc"
+  },
+  {
+    "id": 7,
+    "img": "/img/single/hightension.jpg",
+    "title": "High Tension",
+    "year": "2019",
+    "position": "",
+    "link": "https://youtu.be/2otuSepwPvY?si=SA-OECLxpEUUruud"
+  },
+  {
+    "id": 8,
+    "img": "/img/single/rapsodi.webp",
+    "title": "Rapsodi",
+    "year": "2020",
+    "position": "center",
+    "link": "https://youtu.be/Xu1wA7CfhQg?si=VDx-amoIazRi-RaS"
+  },
+  {
+    "id": 9,
+    "img": "/img/single/darashinai.webp",
+    "title": "Darashinai Aishikata",
+    "year": "2021",
+    "position": "center",
+    "link": "https://youtu.be/Xu1wA7CfhQg?si=VDx-amoIazRi-RaS"
+  },
+  {
+    "id": 10,
+    "img": "/img/single/flyinghigh.png",
+    "title": "Flying High",
+    "year": "2022",
+    "position": "",
+    "link": "https://youtu.be/eq0s1atl_K0?si=0g2DciC-vUNZrk7p"
+  },
+  {
+    "id": 11,
+    "img": "/img/single/sayonaracrawl.jpeg",
+    "title": "Sayonara Crawl",
+    "year": "2023",
+    "position": "center",
+    "link": "https://youtu.be/5cy3vDjTfFY?si=aWhurHOHUC8rN9d8"
+  }
+]

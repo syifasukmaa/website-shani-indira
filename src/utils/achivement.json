@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Sousenkyo 2015",
+    "src": "/img/ssk/ssk2015.jpg",
+    "rank": "32",
+    "music": "Value Milikku Saja"
+  },
+  {
+    "id": 2,
+    "name": "Sousenkyo 2016",
+    "src": "/img/ssk/ssk2016.png",
+    "rank": "26",
+    "music": "Tidak Boleh Pelukan"
+  },
+  {
+    "id": 3,
+    "name": "Sousenkyo 2017",
+    "src": "/img/ssk/ssk2017.jpg",
+    "rank": "1",
+    "music": "Indah Senyum Manismu"
+  },
+  {
+    "id": 4,
+    "name": "Sousenkyo 2018",
+    "src": "/img/ssk/ssk2018_2.jpg",
+    "rank": "2",
+    "music": "High Tension"
+  },
+  {
+    "id": 5,
+    "name": "Sousenkyo 2019",
+    "src": "/img/ssk/ssk2019.jpg",
+    "rank": "1",
+    "music": "Rapsodi"
+  },
+  {
+    "id": 6,
+    "name": "Request Hour 2017",
+    "src": "/img/ssk/RH2017.jpg",
+    "rank": "3",
+    "music": "Akai Pin Heel to Professor"
+  },
+  {
+    "id": 7,
+    "name": "Request Hour 2018",
+    "src": "/img/ssk/RH2018.jpg",
+    "rank": "4",
+    "music": "Avocado Janesi..."
+  },
+  {
+    "id": 8,
+    "name": "Request Hour 2021",
+    "src": "/img/ssk/RH2021.jpg",
+    "rank": "1",
+    "music": "Menanti"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "src": "/img/shani1.jpg",
+    "name": "Shani 1",
+    "funcfact": "Sebelum masuk JKT48, Shani pernah mengikuti gadis sampul pada tahun 2011",
+    "imgSrc": "Erigo"
+  },
+  {
+    "id": 2,
+    "src": "/img/shani2.jpg",
+    "name": "Shani 2",
+    "funcfact": "Saat kecil Shani berpenampilan tomboy sehingga didaftarkan gadis sampul oleh mamahnya",
+    "imgSrc": "Chocofy"
+  },
+  {
+    "id": 3,
+    "src": "/img/shani3.jpg",
+    "name": "Shani 3",
+    "funcfact": "Saat daftar JKT48 Shani diajak oleh temannya tapi yang masuk hanya Shani saja",
+    "imgSrc": "Chocofy"
+  },
+  {
+    "id": 4,
+    "src": "/img/shani4.jpg",
+    "name": "Shani 4",
+    "funcfact": "Shani mempunyai banyak kucing di Yogya tapi Shani mempunyai alergi terhadap kucing",
+    "imgSrc": "Erigo"
+  },
+  {
+    "id": 5,
+    "src": "/img/shani6.jpg",
+    "name": "shani 5",
+    "funcfact": "Shani mempunyai warna favorit hitam dan coklat",
+    "imgSrc": "Twitter Shani"
+  },
+  {
+    "id": 6,
+    "src": "/img/shani7.jpg",
+    "name": "Shani 6",
+    "funcfact": "Shani merupakan member ke-3 di JKT48 yang mendapatkan single graduation",
+    "imgSrc": "Rantovl"
+  }
+]

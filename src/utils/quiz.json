@@ -1,0 +1,38 @@
+[
+  {
+    "questionText": "Berapa Nomor Audisi JKT48 Shani?",
+    "answerOptions": [
+      { "answerText": "168", "isCorrect": false },
+      { "answerText": "178", "isCorrect": false },
+      { "answerText": "179", "isCorrect": true },
+      { "answerText": "197", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Berapa jumlah vote Shani di Sousenkyo tahun 2018?",
+    "answerOptions": [
+      { "answerText": "47717", "isCorrect": false },
+      { "answerText": "47654", "isCorrect": true },
+      { "answerText": "8221", "isCorrect": false },
+      { "answerText": "72707", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Posisi apa dalam drumband yang ingin Shani coba?",
+    "answerOptions": [
+      { "answerText": "Mayoret", "isCorrect": true },
+      { "answerText": "Ensemble Depan", "isCorrect": false },
+      { "answerText": "Bass Drum", "isCorrect": false },
+      { "answerText": "Pasukan Pengibar Bendera", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Siapa nama kucing Shani yang suka ngereog?",
+    "answerOptions": [
+      { "answerText": "Oyen", "isCorrect": false },
+      { "answerText": "Anton", "isCorrect": false },
+      { "answerText": "Dayat", "isCorrect": false },
+      { "answerText": "Kepin", "isCorrect": true }
+    ]
+  }
+]
