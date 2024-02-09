@@ -1,0 +1,27 @@
+{
+  "name": "My awesome PWA app",
+  "short_name": "PWA App",
+  "icons": [
+    {
+      "src": "/img/img-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/img-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/img-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#E0447F",
+  "background_color": "#234668",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
