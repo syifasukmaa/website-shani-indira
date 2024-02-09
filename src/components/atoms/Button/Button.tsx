@@ -12,7 +12,7 @@ export default function Button({ children, size, fullWidth, variants = 'primary'
   return (
     <button
       className={cn(
-        'border-lightBlue border-2 hover:bg-lightGrey text-white rounded-md shadow-lg cursor-pointer font-semibold',
+        'border-lightBlue border-2 lg:hover:bg-lightGrey text-white rounded-md shadow-lg cursor-pointer font-semibold focus:bg-transparent active:bg-transparent',
         {
           'w-full': fullWidth === true,
           'w-auto': fullWidth === false,

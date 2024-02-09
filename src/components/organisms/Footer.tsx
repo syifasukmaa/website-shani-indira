@@ -1,8 +1,6 @@
 import React from 'react';
 import { TiSocialInstagram, TiSocialTwitter, TiSocialYoutube } from 'react-icons/ti';
 import { RiTiktokLine } from 'react-icons/ri';
-import { motion } from 'framer-motion';
-import { slideIn } from '@/utils/motion';
 
 export default function Footer() {
   const sosmeds = [
@@ -16,11 +14,7 @@ export default function Footer() {
     { id: 4, link: 'https://www.youtube.com/@GreShanTV', icon: <TiSocialYoutube /> },
   ];
   return (
-    <motion.footer
-      variants={slideIn('up', 'tween', 0.5, 1)}
-      initial='hidden'
-      whileInView='show'
-    >
+    <footer>
       <div className='flex justify-center bg-white py-8 text-3xl *:px-4'>
         {sosmeds.map((sosmed) => (
           <a
@@ -44,6 +38,6 @@ export default function Footer() {
           </a>
         </p>
       </div>
-    </motion.footer>
+    </footer>
   );
 }

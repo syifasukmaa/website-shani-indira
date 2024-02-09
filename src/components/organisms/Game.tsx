@@ -6,6 +6,7 @@ import { useQuizStore } from '@/store/useQuizStore';
 import { motion } from 'framer-motion';
 import { galleryContainerVariant, galleryVariant, slideIn } from '@/utils/motion';
 import Button from '../atoms/Button/Button';
+import Image from 'next/image';
 
 const Game = () => {
   const { setIsModalOpen, setIsModalClose, isModalOpen, currentQuotes } = useFunArea();
@@ -70,8 +71,35 @@ const Game = () => {
           <h3 className='font-semibold text-lg'>Quiz About Shani Indira</h3>
           <div className='mt-4 rounded-lg p-[20px] shadow-md flex flex-col lg:flex-row justify-evenly border-2 border-white font-medium'>
             {showScore ? (
-              <div className='score-section flex text-lg items-center'>
-                You scored {score} out of {questions.length}
+              <div className='score-section flex flex-col text-lg items-center'>
+                <p className='mb-2'>
+                  You scored {score} out of {questions.length}
+                </p>
+                {score === 5 ? (
+                  <div className='flex flex-col justify-center items-center'>
+                    <p>Yeay selamat!!! </p>
+                    <Image
+                      src='/img/shani13.jpg'
+                      height={500}
+                      width={500}
+                      alt='shani image'
+                      priority={true}
+                      className='w-[40%] mt-3 rounded-lg'
+                    />
+                  </div>
+                ) : (
+                  <div className='flex flex-col justify-center items-center'>
+                    <p>Masih ada yang salah😔</p>
+                    <Image
+                      src='/img/shani14.jpg'
+                      height={500}
+                      width={500}
+                      alt='shani image'
+                      priority={true}
+                      className='w-[40%] mt-3 rounded-lg'
+                    />
+                  </div>
+                )}
               </div>
             ) : (
               <>

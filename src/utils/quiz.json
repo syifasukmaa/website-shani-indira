@@ -27,12 +27,21 @@
     ]
   },
   {
+    "questionText": "Tanggal berapa Anniversary gen 3?",
+    "answerOptions": [
+      { "answerText": "13 April", "isCorrect": false },
+      { "answerText": "15 April", "isCorrect": false },
+      { "answerText": "15 Maret", "isCorrect": true },
+      { "answerText": "13 Maret", "isCorrect": false }
+    ]
+  },
+  {
     "questionText": "Siapa nama kucing Shani yang suka ngereog?",
     "answerOptions": [
       { "answerText": "Oyen", "isCorrect": false },
+      { "answerText": "Kepin", "isCorrect": true },
       { "answerText": "Anton", "isCorrect": false },
-      { "answerText": "Dayat", "isCorrect": false },
-      { "answerText": "Kepin", "isCorrect": true }
+      { "answerText": "Dayat", "isCorrect": false }
     ]
   }
 ]

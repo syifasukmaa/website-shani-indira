@@ -32,11 +32,11 @@ export default function Single() {
             >
               <Image
                 src={single.img}
-                height={1000}
-                width={1000}
+                height={500}
+                width={500}
                 alt='shani1'
                 priority={true}
-                className=''
+                className='w-full'
               />
             </a>
             <div className='py-4 text-left'>
