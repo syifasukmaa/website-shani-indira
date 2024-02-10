@@ -69,7 +69,7 @@ export default function Profile() {
                       width={300}
                       height={300}
                       className='bg-cover object-cover w-full'
-                      priority={true}
+                      priority={false}
                     />
                   </div>
                 </SwiperSlide>

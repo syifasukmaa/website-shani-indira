@@ -63,6 +63,7 @@ const Navbar = () => {
           <button
             className={'absolute block right-5 lg:hidden z-50'}
             onClick={() => setIsNavOpen(false)}
+            aria-label='close button'
           >
             <BsXLg className='text-3xl text-black' />
           </button>
@@ -70,6 +71,7 @@ const Navbar = () => {
           <button
             className={'absolute block right-5 lg:hidden'}
             onClick={() => setIsNavOpen(true)}
+            aria-label='menu button'
           >
             <RxHamburgerMenu className='text-3xl font-normal text-white' />
           </button>

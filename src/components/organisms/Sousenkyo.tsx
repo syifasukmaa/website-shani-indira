@@ -26,11 +26,11 @@ export default function Sousenkyo() {
             >
               <Image
                 src={shani.src}
-                height={1000}
-                width={1000}
+                height={200}
+                width={300}
                 alt={shani.name}
-                priority={true}
-                className='rounded-lg group-hover:transition-transform group-hover:scale-125'
+                priority={false}
+                className='rounded-lg group-hover:transition-transform group-hover:scale-125 w-full object-cover'
               />
               <div className='absolute bg-gradient-to-b from-transparent via-transparent to-black rounded-lg inset-0 group-hover:from-black/80 group-hover:via-black/70 group-hover:to-black/80'></div>
               <div className='absolute bottom-0 inset-x-0 flex flex-col bg-pink group-hover:bg-transparent items-center justify-center rounded-b-lg transition-all group-hover:duration-300 translate-y-[68%] lg:translate-y-[65%] group-hover:translate-y-0 group-hover:inset-y-0'>

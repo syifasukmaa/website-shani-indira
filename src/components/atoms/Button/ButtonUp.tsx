@@ -41,10 +41,10 @@ export default function ButtonUp() {
       } fixed w-[12%] md:w-[8%] lg:w-[4%] p-3 cursor-pointer border-2 border-transparent hover:bg-lightGrey mx-auto bottom-10 right-6 lg:right-12 rounded-full bg-white z-40`}
     >
       <Image
-        src='./img/up.svg'
-        className='w-[100%]'
-        width={500}
+        src='/img/up.svg'
+        width={300}
         height={500}
+        priority={false}
         alt='image up'
       />
     </Link>

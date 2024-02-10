@@ -41,10 +41,10 @@ export default function Header() {
                 <Image
                   src='/img/shani-header.png'
                   alt='shani indira'
-                  width={500}
-                  height={500}
+                  width={280}
+                  height={380}
                   className='h-[356px] lg:h-[456px] w-full absolute -top-14'
-                  priority={true}
+                  priority={false}
                 />
               </div>
             </motion.div>

@@ -21,6 +21,7 @@ export default function Footer() {
             key={sosmed.id}
             target='_blank'
             href={sosmed.link}
+            aria-label={sosmed.link}
           >
             {sosmed.icon}
           </a>

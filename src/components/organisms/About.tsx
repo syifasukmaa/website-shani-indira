@@ -59,10 +59,10 @@ export default function About() {
                     <Image
                       src={shani.src}
                       alt={`${shani.src} pict`}
-                      width={500}
-                      height={500}
+                      width={250}
+                      height={300}
                       className='bg-cover object-cover w-full'
-                      priority={true}
+                      priority={false}
                     />
                   </div>
                 </SwiperSlide>
