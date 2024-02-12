@@ -1,16 +1,10 @@
 // Game.tsx
 'use client';
 import React from 'react';
-import useFunArea from '@/store/useFunArea';
-import { useQuizStore } from '@/store/useQuizStore';
-import { motion } from 'framer-motion';
-import { galleryContainerVariant, galleryVariant, slideIn } from '@/utils/motion';
-import Button from '../atoms/Button/Button';
-import Image from 'next/image';
+import QoutesGallery from '../molecules/game/QoutesGallery';
+import QuizGallery from '../molecules/game/QuizGallery';
 
 const Game = () => {
-  const { setIsModalOpen, setIsModalClose, isModalOpen, currentQuotes } = useFunArea();
-  const { currentQuestion, showScore, score, questions, handleAnswerOptionClick } = useQuizStore();
   return (
     <section
       className='pt-[100px] mb-10 md:my-20 px-6 lg:px-12'
@@ -18,117 +12,11 @@ const Game = () => {
     >
       <h2 className='text-white text-4xl case'>Fun Area</h2>
       <div className='mt-4 flex flex-col md:flex-row text-white justify-between z-30'>
-        <motion.div
-          initial='hidden'
-          whileInView='show'
-          variants={galleryContainerVariant}
-          className='lg:w-1/2 md:w-[60%]'
-        >
-          <motion.div variants={galleryVariant}>
-            <h3 className='font-semibold text-lg'>Qoutes By Shani Indira</h3>
-            <p className='mt-4 w-[80%]'>
-              Shani mempunyai show yang bernama Kamar Shani, dimana Shani memberikan masukan kepada member lain yang
-              sedang curhat kepadanya.
-            </p>
-            <Button
-              fullWidth={false}
-              size='medium'
-              onClick={setIsModalOpen}
-            >
-              Silahkan Dibaca
-            </Button>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className={`${
-              isModalOpen
-                ? 'fixed inset-0 z-10 text-white bg-slate-950 bg-opacity-90 w-screen h-screen flex justify-center items-center'
-                : 'hidden'
-            }`}
-          >
-            <div className='bg-white rounded shadow-md p-8 z-50 w-[80%] md:w-[60%] lg:w-[40%] xl:w-[30%] text-black relative'>
-              <p className='mt-2'>{currentQuotes}</p>
-
-              <Button
-                variants='secondary'
-                size='small'
-                className='absolute top-3 right-2'
-                onClick={setIsModalClose}
-              >
-                X
-              </Button>
-            </div>
-          </motion.div>
-        </motion.div>
-        <motion.div
-          initial='hidden'
-          whileInView='show'
-          variants={slideIn('right', 'tween', 0.5, 0.7)}
-          className='lg:w-1/2 mt-8 md:mt-0 overflow-hidden'
-        >
-          <h3 className='font-semibold text-lg'>Quiz About Shani Indira</h3>
-          <div className='mt-4 rounded-lg p-[20px] shadow-md flex flex-col lg:flex-row justify-evenly border-2 border-white font-medium'>
-            {showScore ? (
-              <div className='score-section flex flex-col text-lg items-center'>
-                <p className='mb-2'>
-                  You scored {score} out of {questions.length}
-                </p>
-                {score === 5 ? (
-                  <div className='flex flex-col justify-center items-center'>
-                    <p>Yeay selamat!!! </p>
-                    <Image
-                      src='/img/shani13.jpg'
-                      height={500}
-                      width={500}
-                      alt='shani image'
-                      priority={true}
-                      className='w-[40%] mt-3 rounded-lg'
-                    />
-                  </div>
-                ) : (
-                  <div className='flex flex-col justify-center items-center'>
-                    <p>Masih ada yang salah😔</p>
-                    <Image
-                      src='/img/shani14.jpg'
-                      height={500}
-                      width={500}
-                      alt='shani image'
-                      priority={true}
-                      className='w-[40%] mt-3 rounded-lg'
-                    />
-                  </div>
-                )}
-              </div>
-            ) : (
-              <>
-                <div className='question-section w-full relative'>
-                  <div className='question-count mb-3'>
-                    <span className='text-xl'>Question {currentQuestion + 1}</span>/{questions.length}
-                  </div>
-                  <div className='question-text mb-3 lg:pr-4 text-base'>{questions[currentQuestion]?.questionText}</div>
-                </div>
-                <div className='answer-section w-full flex flex-col justify-between'>
-                  {questions[currentQuestion]?.answerOptions?.map((answerOption, index) => (
-                    <Button
-                      key={index}
-                      size='large'
-                      fullWidth={true}
-                      onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
-                    >
-                      {answerOption.answerText}
-                    </Button>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-        </motion.div>
+        <QoutesGallery />
+        <QuizGallery />
       </div>
     </section>
   );
 };
 
 export default Game;
-// fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  bg-slate-950 bg-opacity-60 z-50 w-screen h-screen flex justify-center items-center

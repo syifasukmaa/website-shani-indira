@@ -14,7 +14,6 @@ interface Question {
 interface QuizStore {
   currentQuestion: number;
   showScore: boolean;
-  changeColor: boolean;
   score: number;
   questions: Question[];
   handleAnswerOptionClick: (isCorrect: boolean) => void;
@@ -22,7 +21,6 @@ interface QuizStore {
 export const useQuizStore = createWithEqualityFn<QuizStore>((set) => ({
   currentQuestion: 0,
   showScore: false,
-  changeColor: false,
   score: 0,
   questions: question,
 
