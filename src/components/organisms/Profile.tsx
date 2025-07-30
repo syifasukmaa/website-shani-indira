@@ -7,14 +7,14 @@ import { motion } from 'framer-motion';
 import { slideIn } from '@/utils/motion';
 import MySwiper from '../molecules/MySwipper';
 
-export default function Profile() {
+const Profile: React.FC = () => {
   return (
     <section
       className='pt-[20px] sm:pt-[100px] md:pt-20'
       id='Fun fact'
     >
-      <div className='text-center px-6 lg:px-12'>
-        <h2 className='text-white text-4xl'>SHANI'S FUN FACT</h2>
+      <div className='px-6 text-center lg:px-12'>
+        <h2 className='text-4xl text-white'>SHANI'S FUN FACT</h2>
         <motion.div
           initial='hidden'
           whileInView='show'
@@ -29,4 +29,6 @@ export default function Profile() {
       </div>
     </section>
   );
-}
+};
+
+export default Profile;

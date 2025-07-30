@@ -6,24 +6,24 @@ import { FaCrown } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { galleryContainerVariant, galleryVariant, hoverVariant } from '@/utils/motion';
 
-export default function Single() {
+const Single: React.FC = () => {
   return (
     <section
       className='pt-[100px] lg:pt-[100px] mb-10 md:my-20 px-6 lg:px-12'
       id='Songs'
     >
-      <h2 className='text-white text-4xl'>SINGLE PARTICIPATION</h2>
+      <h2 className='text-4xl text-white'>SINGLE PARTICIPATION</h2>
       <motion.div
         variants={galleryContainerVariant}
         initial='hidden'
         whileInView='show'
-        className='mt-10 lg:mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-4 gap-y-10 '
+        className='grid grid-cols-2 mt-10 lg:mt-16 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-4 gap-y-10 '
       >
         {singles.map((single) => (
           <motion.div
             variants={galleryVariant}
             whileHover={{ translateY: -10, transition: { duration: 0.1, ease: 'easeOut' } }}
-            className='rounded overflow-hidden group hover:shadow-2xl shadow-white transition duration-300'
+            className='overflow-hidden transition duration-300 rounded group hover:shadow-2xl shadow-white'
             key={single.id}
           >
             <a
@@ -39,7 +39,7 @@ export default function Single() {
               />
             </a>
             <div className='py-4 text-left'>
-              <div className='font-normal text-lg text-white hover:underline hover:text-pink'>
+              <div className='text-lg font-normal text-white hover:underline hover:text-pink'>
                 <a
                   href={single.link}
                   target='_blank'
@@ -48,9 +48,9 @@ export default function Single() {
                 </a>
               </div>
             </div>
-            <div className='pb-2 flex'>
-              <div className=' flex bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-pink mr-2 mb-2'>
-                <SlCalender className='text-pink font-bold hidden md:block' />{' '}
+            <div className='flex pb-2'>
+              <div className='flex px-3 py-1 mb-2 mr-2 text-sm font-semibold bg-gray-200 rounded-full text-pink'>
+                <SlCalender className='hidden font-bold text-pink md:block' />{' '}
                 <span className='md:ml-2'>{single.year}</span>
               </div>
               <div
@@ -67,4 +67,6 @@ export default function Single() {
       </motion.div>
     </section>
   );
-}
+};
+
+export default Single;

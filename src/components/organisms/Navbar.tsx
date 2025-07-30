@@ -8,7 +8,7 @@ import { shallow } from 'zustand/shallow';
 import { motion } from 'framer-motion';
 import { navVariants } from '@/utils/motion';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const { isNavOpen, colorChange, setIsNavOpen, setColorChange } = useStore(
     (state) => ({
       isNavOpen: state.isNavOpen,
@@ -35,7 +35,12 @@ const Navbar = () => {
     };
   }, [setColorChange]);
 
-  const links = [
+  interface NavLink {
+    id: number;
+    text: string;
+  }
+
+  const links: NavLink[] = [
     { id: 1, text: 'Home' },
     { id: 7, text: 'Fun fact' },
     { id: 6, text: 'Fun Area' },
@@ -55,8 +60,8 @@ const Navbar = () => {
           : 'fixed w-full py-3 bg-transparent z-50'
       }`}
     >
-      <div className='relative flex items-center justify-between mx-auto px-4 md:px-6 lg:px-8'>
-        <h1 className='text-white text-2xl font-semibold'>
+      <div className='relative flex items-center justify-between px-4 mx-auto md:px-6 lg:px-8'>
+        <h1 className='text-2xl font-semibold text-white'>
           <span className='text-3xl'>S</span>hani <span className='text-3xl'>I</span>ndira
         </h1>
         {isNavOpen ? (

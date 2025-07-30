@@ -2,16 +2,22 @@ import React from 'react';
 import { TiSocialInstagram, TiSocialTwitter, TiSocialYoutube } from 'react-icons/ti';
 import { RiTiktokLine } from 'react-icons/ri';
 
-export default function Footer() {
-  const sosmeds = [
+const Footer: React.FC = () => {
+  type FooterProps = {
+    id: number;
+    link: string;
+    icon: React.ReactElement;
+  };
+
+  const sosmeds: FooterProps[] = [
     {
       id: 1,
-      link: 'https://www.instagram.com/jkt48shani/',
+      link: 'https://www.instagram.com/_shanindira/',
       icon: <TiSocialInstagram />,
     },
-    { id: 2, link: 'https://twitter.com/N_ShaniJKT48', icon: <TiSocialTwitter /> },
-    { id: 3, link: 'https://www.tiktok.com/@shanijkt48', icon: <RiTiktokLine /> },
-    { id: 4, link: 'https://www.youtube.com/@GreShanTV', icon: <TiSocialYoutube /> },
+    { id: 2, link: 'https://x.com/_shanindira', icon: <TiSocialTwitter /> },
+    { id: 3, link: 'https://www.tiktok.com/shaniindira', icon: <RiTiktokLine /> },
+    { id: 4, link: 'https://www.youtube.com/@shanindiraofficial', icon: <TiSocialYoutube /> },
   ];
   return (
     <footer>
@@ -27,7 +33,7 @@ export default function Footer() {
           </a>
         ))}
       </div>
-      <div className='bg-slate-300 flex justify-center flex-col items-center py-6'>
+      <div className='flex flex-col items-center justify-center py-6 bg-slate-300'>
         <p className='font-medium'>This Website is created using 💖</p>
         <p className='mt-1'>
           © 2024
@@ -41,4 +47,5 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+export default Footer;
