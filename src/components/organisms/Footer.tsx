@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   type FooterProps = {
     id: number;
     link: string;
-    icon: React.ReactElement;
+    icon: React.ReactElement<any>;
   };
 
   const sosmeds: FooterProps[] = [
