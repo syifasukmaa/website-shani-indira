@@ -1,4 +1,6 @@
-export const navVariants = {
+import type { Variants } from 'framer-motion';
+
+export const navVariants: Variants = {
   hidden: {
     opacity: 0,
     y: -50,
@@ -19,7 +21,12 @@ export const navVariants = {
   },
 };
 
-export const slideIn = (direction, type, delay, duration) => ({
+export const slideIn = (
+  direction: 'left' | 'right' | 'up' | 'down',
+  type: 'tween' | 'spring',
+  delay: number,
+  duration: number,
+): Variants => ({
   hidden: {
     opacity: 0,
     x: direction === 'left' ? '-100%' : direction === 'right' ? '5%' : 0,
@@ -38,7 +45,7 @@ export const slideIn = (direction, type, delay, duration) => ({
   },
 });
 
-export const containerVariant = {
+export const containerVariant: Variants = {
   hidden: { opacity: 1, scale: 0 },
   show: {
     opacity: 1,
@@ -49,7 +56,8 @@ export const containerVariant = {
     },
   },
 };
-export const galleryContainerVariant = {
+
+export const galleryContainerVariant: Variants = {
   hidden: { opacity: 1 },
   show: {
     transition: {
@@ -59,7 +67,7 @@ export const galleryContainerVariant = {
   },
 };
 
-export const galleryVariant = {
+export const galleryVariant: Variants = {
   hidden: { y: 20, opacity: 0 },
   show: {
     y: 0,
@@ -79,4 +87,4 @@ export const hoverVariant = {
     delay: 0.5,
     ease: 'easeOut',
   },
-};
+} as unknown as Variants;

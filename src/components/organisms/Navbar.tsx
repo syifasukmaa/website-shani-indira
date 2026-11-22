@@ -6,8 +6,13 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import { Link } from 'react-scroll';
 import { shallow } from 'zustand/shallow';
 import { motion } from 'framer-motion';
-import { navVariants } from '@/utils/motion';
 
+import type { Variants } from "framer-motion";
+
+const navVariants: Variants = {
+  hidden: { opacity: 0, y: 20, transition: { type: "spring", stiffness: 100, damping: 10 } },
+  show:   { opacity: 1, y: 0,  transition: { type: "spring", stiffness: 100, delay: 0.2 } },
+};
 const Navbar: React.FC = () => {
   const { isNavOpen, colorChange, setIsNavOpen, setColorChange } = useStore(
     (state) => ({
